@@ -61,6 +61,8 @@ namespace CovidVaccinationWatch
             
             Plugins.Add(new AutoQueryFeature { MaxLimit = 100});
 
+            JsConfig.DateHandler = DateHandler.ISO8601;
+
             var csvStr = "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/us_state_vaccinations.csv"
                 .GetStringFromUrl();
 
