@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack" Version="5.*" />
+    <PackageReference Include="ServiceStack.OrmLite" Version="5.10.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CovidVaccinationWatch.ServiceModel\CovidVaccinationWatch.ServiceModel.csproj" />
+  </ItemGroup>
+
+</Project>
