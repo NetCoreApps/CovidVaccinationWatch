@@ -11,7 +11,7 @@ namespace CovidVaccinationWatch.ServiceModel
     }
 
     [Route("/locations")]
-    public class GetLocations : IReturn<GetLocationsResponse>
+    public class GetLocations : IReturn<GetLocationsResponse>, IGet
     {
         
     }
