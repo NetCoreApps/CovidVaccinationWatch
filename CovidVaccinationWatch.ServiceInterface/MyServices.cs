@@ -9,11 +9,6 @@ namespace CovidVaccinationWatch.ServiceInterface
 {
     public class MyServices : Service
     {
-        public object Any(Hello request)
-        {
-            return new HelloResponse { Result = $"Hello, {request.Name}!" };
-        }
-
         public object Get(GetLocations request)
         {
             var q = Db.From<VaccinationData>()

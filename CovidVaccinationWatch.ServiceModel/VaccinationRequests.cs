@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using CovidVaccinationWatch.ServiceModel.Types;
 using ServiceStack;
+using ServiceStack.DataAnnotations;
 
 namespace CovidVaccinationWatch.ServiceModel
 {
@@ -13,7 +14,7 @@ namespace CovidVaccinationWatch.ServiceModel
     [Route("/locations")]
     public class GetLocations : IReturn<GetLocationsResponse>, IGet
     {
-        
+
     }
 
     public class GetLocationsResponse
@@ -22,6 +23,7 @@ namespace CovidVaccinationWatch.ServiceModel
     }
 
     [Route("/vaccination_rate/reset")]
+    [Exclude(Feature.All)]
     public class ResetVaccinationData
     {
         
