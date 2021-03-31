@@ -129,7 +129,7 @@ function bindYouTubePlay(img) {
 }
 
 function bindYouTubeImages() {
-    preloadImage('/images/youtube-play-hover.png');
+    preloadImage("{{ '/images/youtube-play-hover.png' | relative_url }}");
     $("a[href^='https://youtu.be/']>img").each(function() {
         if (this.complete) {
             bindYouTubePlay($(this));
