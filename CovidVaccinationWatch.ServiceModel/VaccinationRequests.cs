@@ -5,7 +5,7 @@ using ServiceStack.DataAnnotations;
 
 namespace CovidVaccinationWatch.ServiceModel
 {
-    [Route("/vaccination_rate")]
+    [Route("/vaccination_rates")]
     public class QueryVaccinationRates : QueryDb<VaccinationData>
     {
         public string Location { get; set; }
