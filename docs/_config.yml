@@ -5,6 +5,7 @@ description: Docs for the wrapped COVID vaccination data API
 url: servicestackapps.github.io/CovidVaccinationWatch/
 repository: ServiceStackApps/CovidVaccinationWatch
 google_analytics_key:
+baseurl: /CovidVaccinationWatch
 
 collections:
   documentation:
