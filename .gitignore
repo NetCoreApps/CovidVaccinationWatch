@@ -283,7 +283,7 @@ __pycache__/
 
 # Telerik's JustMock configuration file
 *.jmconfig
-
+vaccinations.csv
 # BizTalk build output
 *.btp.cs
 *.btm.cs

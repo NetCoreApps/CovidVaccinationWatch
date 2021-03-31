@@ -7,6 +7,7 @@
 <!--    <script>if (location.protocol != "https:") location.protocol = "https:";</script>-->
     <link rel="shortcut icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" integrity="sha384-vX91RAFcTH1KK6fRAM0U1R/zrawktt+ZpDyYF7dUxp6e4nHvzTDB1vBfwEGSHuWg" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ 'css/github-markdown.css' | relative_url }}">
     <link rel="stylesheet" href="{{ 'css/default.css' | relative_url }}">
@@ -44,6 +45,7 @@
     </div>
    
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" integrity="sha384-vIp38BeRN82wlvPB8/vo/5e0J1/gn7WfUf1Qq9bdh79iMPxjry99thNkscQG1b8C" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
@@ -74,6 +76,34 @@ $("#sidebar-toggle").click(function(){
 
 $("#sidebar a[href^=http]")
     .append('<i class="fa fa-external-link" style="margin-left:5px"></i>');
+
+var nameGistCafeMapping = {
+    "get-locations-csharp": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2Fcsharp%2FGetLocations()&title=Get%20Locations&mode=viewonly",
+    "get-locations-dart": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2Fdart%2FGetLocations()&title=Get%20Locations&mode=viewonly",
+    "get-locations-typescript": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2Ftypescript%2FGetLocations()&title=Get%20Locations&mode=viewonly",
+    "query-data-csharp" : "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2Fcsharp%2FQueryVaccinationRates(Location%3AAlabama)&title=Get%20Locations&mode=viewonly",
+    "query-data-dart": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2Fdart%2FQueryVaccinationRates(Location%3AAlabama)&title=Get%20Locations&mode=viewonly",
+    "query-data-typescript":"https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2Ftypescript%2FQueryVaccinationRates(Location%3AAlabama)&title=Get%20Locations&mode=viewonly"
+}
+
+function generateGistCafeUrl(operation,lang) {
+
+}
+
+$( function() {
+    $( ".tabs" ).tabs({
+        beforeLoad: function( event, ui ) {
+            if(ui.ajaxSettings.url != null && nameGistCafeMapping.hasOwnProperty(ui.ajaxSettings.url)) {
+                console.log(ui.ajaxSettings.url)
+                document.getElementById("gist-cafe-content").src = nameGistCafeMapping[ui.ajaxSettings.url];
+            }
+            console.log(event);
+            console.log(ui);
+            console.log(ui.jqXHR);
+            ui.jqXHR.abort();
+        }
+    });
+} );
 
 //Allow clicking on non-linked headers to jump to its #href
 $("h2,h3,h4").click(function(){
