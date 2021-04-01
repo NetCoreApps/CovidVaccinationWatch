@@ -43,6 +43,20 @@ This way we could place new examples by using key per example and choose which l
 </div>
 ```
 
+Above `query-data` is the name we have given to a specific example and separated by a specific language, eg `our-example|csharp`.
+
+The key `query-data` is then added to a JS object with the `iframe` URL replacing the specific language with `$LANG$`.
+
+```js
+// Add examples here with "$LANG$" to replace and match IDs in HTML added into each page.
+var nameGistCafeMapping = {
+    "get-locations": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FGetLocations()&title=Get%20Locations&mode=viewonly",
+    "query-data": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(Location%3AAlabama)&title=Get%20Locations&mode=viewonly",
+    "query-data-ordered": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(OrderByDesc%3ATotalDistributed)&title=Get%20Locations&mode=viewonly",
+    "query-data-combined": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(Location%3AAlaska%2COrderByDesc%3ATotalDistributed%2CFields%3A%22Date%2C%20Location%2C%20DailyVaccinations%22)&mode=viewonly"
+}
+```
+
 Combined with some simple jQueryUI, this allows users of the docs to see concrete examples of how to interact with a service.
 
 ```js
