@@ -97,4 +97,4 @@ Resulting in a way to put hand crafted docs next to generated code examples.
   </div>
 </div>
 
-[Try `Instant Client Apps`](https://apps.servicestack.net/) yourself and enhance your documentation for your ServiceStack services!
+#### Try [*Instant Client Apps*](https://apps.servicestack.net/) yourself and enhance your documentation for your ServiceStack services!
