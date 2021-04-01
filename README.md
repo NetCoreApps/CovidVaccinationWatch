@@ -70,3 +70,5 @@ $( function() {
 Resulting in a way to put hand crafted docs next to generated code examples.
 
 ![](https://github.com/ServiceStack/docs/raw/master/docs/images/apps/vaccinations-docs.gif)
+
+[Try `Instant Client Apps`](https://apps.servicestack.net/) yourself and enhance your documentation for your ServiceStack services!

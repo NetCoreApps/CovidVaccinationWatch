@@ -82,3 +82,5 @@ Resulting in a way to put hand crafted docs next to generated code examples.
      <iframe class="gist-cafe-content" src="" frameborder="0" style="height:450px;width:100%;border:1px solid #ddd"></iframe>
   </div>
 </div>
+
+[Try `Instant Client Apps`](https://apps.servicestack.net/) yourself and enhance your documentation for your ServiceStack services!
