@@ -23,6 +23,8 @@ Filtering by location, we can probide `Alabama` as an example.
   </div>
 </div>
 
+### Ordering results
+
 Data can also be ordered by providing the type of ordering and the field to order.
 
 <div class="gist-cafe-tabs">
@@ -41,3 +43,22 @@ Data can also be ordered by providing the type of ordering and the field to orde
   </div>
 </div>
 
+### Limiting fields combined
+
+We can also combine date filtering with location and ordering.
+
+<div class="gist-cafe-tabs">
+  <ul>
+    <li><a href="query-data-combined|csharp">C#</a></li>
+    <li><a href="query-data-combined|typescript">TypeScript</a></li>
+    <li><a href="query-data-combined|dart">Dart</a></li>
+    <li><a href="query-data-combined|java">Java</a></li>
+    <li><a href="query-data-combined|kotlin">Kotlin</a></li>
+    <li><a href="query-data-combined|swift">Swift</a></li>
+    <li><a href="query-data-combined|vbnet">VB.NET</a></li>
+    <li><a href="query-data-combined|fsharp">F#</a></li>
+  </ul>
+  <div>
+     <iframe class="gist-cafe-content" src="" frameborder="0" style="height:450px;width:100%;border:1px solid #ddd"></iframe>
+  </div>
+</div>

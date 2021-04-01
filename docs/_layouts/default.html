@@ -80,7 +80,9 @@ $("#sidebar a[href^=http]")
 var nameGistCafeMapping = {
     "get-locations": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FGetLocations()&title=Get%20Locations&mode=viewonly",
     "query-data": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(Location%3AAlabama)&title=Get%20Locations&mode=viewonly",
-    "query-data-ordered": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(OrderByDesc%3ATotalDistributed)&title=Get%20Locations&mode=viewonly",}
+    "query-data-ordered": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(OrderByDesc%3ATotalDistributed)&title=Get%20Locations&mode=viewonly",
+    "query-data-combined": "https://gist.cafe/embed?gist=https%3A%2F%2Fapps.servicestack.net%2Fgists%2Fcovid-vac-watch.netcore.io%2F$LANG$%2FQueryVaccinationRates(Location%3AAlaska%2COrderByDesc%3ATotalDistributed%2CFields%3A%22Date%2C%20Location%2C%20DailyVaccinations%22)&mode=viewonly"
+}
 
 function getIFrameUrlByExampleAndLanguage(exampleId) {
     var language = exampleId.split('|')[1];
