@@ -95,9 +95,7 @@ $( function() {
         beforeLoad: function( event, ui ) {
             if(ui.ajaxSettings.url != null) {
                 var url = getIFrameUrlByExampleAndLanguage(ui.ajaxSettings.url)
-                console.log(ui.ajaxSettings.url)
                 $(this).find(".gist-cafe-content").attr("src",url)
-                //document.getElementById("gist-cafe-content").src = nameGistCafeMapping[ui.ajaxSettings.url];
             }
             ui.jqXHR.abort();
         }
