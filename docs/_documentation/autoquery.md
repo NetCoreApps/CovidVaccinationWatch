@@ -9,9 +9,14 @@ Filtering by location, we can probide `Alabama` as an example.
 
 <div class="gist-cafe-tabs">
   <ul>
-    <li><a href="query-data-csharp">C#</a></li>
-    <li><a href="query-data-dart">Dart</a></li>
-    <li><a href="query-data-typescript">TypeScript</a></li>
+    <li><a href="query-data|csharp">C#</a></li>
+    <li><a href="query-data|typescript">TypeScript</a></li>
+    <li><a href="query-data|dart">Dart</a></li>
+    <li><a href="query-data|java">Java</a></li>
+    <li><a href="query-data|kotlin">Kotlin</a></li>
+    <li><a href="query-data|swift">Swift</a></li>
+    <li><a href="query-data|vbnet">VB.NET</a></li>
+    <li><a href="query-data|fsharp">F#</a></li>
   </ul>
   <div>
      <iframe class="gist-cafe-content" src="" frameborder="0" style="height:450px;width:100%;border:1px solid #ddd"></iframe>
@@ -22,9 +27,14 @@ Data can also be ordered by providing the type of ordering and the field to orde
 
 <div class="gist-cafe-tabs">
   <ul>
-    <li><a href="query-data-ordered-csharp">C#</a></li>
-    <li><a href="query-data-ordered-dart">Dart</a></li>
-    <li><a href="query-data-ordered-typescript">TypeScript</a></li>
+    <li><a href="query-data-ordered|csharp">C#</a></li>
+    <li><a href="query-data-ordered|typescript">TypeScript</a></li>
+    <li><a href="query-data-ordered|dart">Dart</a></li>
+    <li><a href="query-data-ordered|java">Java</a></li>
+    <li><a href="query-data-ordered|kotlin">Kotlin</a></li>
+    <li><a href="query-data-ordered|swift">Swift</a></li>
+    <li><a href="query-data-ordered|vbnet">VB.NET</a></li>
+    <li><a href="query-data-ordered|fsharp">F#</a></li>
   </ul>
   <div>
      <iframe class="gist-cafe-content" src="" frameborder="0" style="height:450px;width:100%;border:1px solid #ddd"></iframe>
