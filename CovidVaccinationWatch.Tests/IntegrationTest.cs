@@ -37,7 +37,7 @@ namespace CovidVaccinationWatch.Tests
 
                 JsConfig.DateHandler = DateHandler.ISO8601;
 
-                var csvStr = File.ReadAllText("~\\TestFiles\\test-data.csv".MapProjectPath());
+                var csvStr = File.ReadAllText("~/TestFiles/test-data.csv".MapProjectPath());
 
                 if (csvStr == null)
                 {
