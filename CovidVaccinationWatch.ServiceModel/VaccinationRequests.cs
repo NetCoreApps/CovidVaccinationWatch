@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CovidVaccinationWatch.ServiceModel.Types;
 using ServiceStack;
 using ServiceStack.DataAnnotations;
@@ -9,6 +10,7 @@ namespace CovidVaccinationWatch.ServiceModel
     public class QueryVaccinationRates : QueryDb<VaccinationData>
     {
         public string Location { get; set; }
+        public DateTime? Date { get; set; } 
     }
 
     [Route("/locations")]
