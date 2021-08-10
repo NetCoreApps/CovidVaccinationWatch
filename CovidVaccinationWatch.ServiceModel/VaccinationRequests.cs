@@ -11,6 +11,8 @@ namespace CovidVaccinationWatch.ServiceModel
     {
         public string Location { get; set; }
         public DateTime? Date { get; set; } 
+        public DateTime? DateGreaterThan { get; set; }
+        public DateTime? DateLessThan { get; set; }
     }
 
     [Route("/locations")]
