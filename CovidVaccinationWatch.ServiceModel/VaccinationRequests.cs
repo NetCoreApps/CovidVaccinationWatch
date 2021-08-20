@@ -7,6 +7,7 @@ using ServiceStack.DataAnnotations;
 namespace CovidVaccinationWatch.ServiceModel
 {
     [Route("/vaccination_rates")]
+    [Tag("AutoQuery")]
     public class QueryVaccinationRates : QueryDb<VaccinationData>
     {
         public string Location { get; set; }
@@ -16,6 +17,7 @@ namespace CovidVaccinationWatch.ServiceModel
     }
 
     [Route("/locations")]
+    [Tag("Related")]
     public class GetLocations : IReturn<GetLocationsResponse>, IGet
     {
 
